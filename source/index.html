@@ -9,8 +9,8 @@
   <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png"> 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
-  <!-- <link rel="preload" href="./fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="./fonts/opensansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous"> -->
+  <link rel="preload" href="./fonts/montserrat400.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/montserrat700.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <title>Интернет-магазин кофейных напитков Drink2Go</title>
 </head>
 
@@ -29,12 +29,12 @@
       </div>
 
       <nav class="main-navigation main-navigation--nojs">
-        <button class="main-navigation__toggle button" type="button" aria-label="Открыть меню">
+        <button class="main-navigation__toggle" type="button" aria-label="Открыть меню">
           <span class="main-navigation__toggle-icon"></span>
         </button>
 
         <div class="main-navigation__container">
-          <ul class="main-navigation__list site-list">
+          <ul class="main-navigation__list main-navigation__list--site site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="#">Главная</a>
             </li>
@@ -52,18 +52,18 @@
           <ul class="main-navigation__list user-list">
             <li class="user-list__item">
               <a class="user-list__link user-list__account" href="#">
-                <svg class="user-list__account-icon" aria-hidden="true" focusable="false" width="16" height="16">
+                <svg class="user-list__icon" aria-hidden="true" focusable="false" width="16" height="16">
                   <use href="img/sprite.svg#account"></use>
                 </svg>
-                <span class="user-list__account-text">Войти</span>
+                <span class="user-list__text">Войти</span>
               </a>
             </li>
             <li class="user-list__item">
               <a class="user-list__link user-list__cart" href="#">
-                <svg class="user-list__cart-icon" aria-hidden="true" focusable="false" width="16" height="16">
+                <svg class="user-list__icon" aria-hidden="true" focusable="false" width="16" height="16">
                   <use href="img/sprite.svg#cart"></use>
                 </svg>
-                <span class="user-list__cart-text">Корзина</span>
+                <span class="user-list__text">Корзина</span>
               </a>
             </li>
           </ul>

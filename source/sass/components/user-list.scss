@@ -1,0 +1,30 @@
+@use "../global/bootstrap.scss";
+
+.user-list {
+  justify-content: flex-end;
+}
+
+.user-list__item {
+  width: 60px;
+  min-height: 60px;
+  padding: 22px;
+
+  box-sizing: border-box;
+}
+
+.user-list__link {
+  display: block;
+  min-width: 16px;
+  min-height: 16px;
+  color: #333333;
+}
+
+.user-list__icon {
+  display: block;
+}
+
+.user-list__text {
+  @media (min-width: bootstrap.$mobile-width) {
+    display: none;
+  }
+}

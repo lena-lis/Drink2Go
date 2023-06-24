@@ -1,0 +1,41 @@
+@use "../global/bootstrap.scss";
+
+.main-header {
+  width: 100%;
+}
+
+.main-header__container {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 72px 1fr;
+
+  min-height: 60px;
+
+  // @media (max-width: bootstrap.$mobile-width-only) {
+  //   display: none;
+  // }
+
+  // @media (min-width: bootstrap.$tablet-width) {
+  //   margin: auto 0;
+  //   margin-right: 54px;
+  // }
+
+  // @media (min-width: bootstrap.$desktop-width) {
+  //   margin-right: 87px;
+  // }
+}
+
+.main-header__logo-container {
+  margin: 12px 20px;
+}
+
+.main-header__logo-image {
+  display: block;
+}
+
+.main-header__logo-text {
+  @media (min-width: bootstrap.$mobile-width) {
+    display: none;
+  }
+}
