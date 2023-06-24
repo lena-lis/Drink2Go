@@ -49,6 +49,12 @@
   @media (min-width: bootstrap.$tablet-width) {
     display: none;
   }
+
+  &:active {
+    @media (max-width: bootstrap.$mobile-width-only) {
+      background-color: #F0EBFF;
+    }
+  }
 }
 
 .main-navigation--closed .main-navigation__toggle-icon {
@@ -93,8 +99,8 @@
   &::before,
   &::after {
     position: absolute;
-    right: 0;
-    width: 17px;
+    right: 2px;
+    width: 16px;
     height: 2px;
     content: "";
     background-color: #333333;

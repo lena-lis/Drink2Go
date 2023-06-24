@@ -10,6 +10,12 @@
   padding: 22px;
 
   box-sizing: border-box;
+
+  &:active {
+    @media (max-width: bootstrap.$mobile-width-only) {
+      background-color: #F0EBFF;
+    }
+  }
 }
 
 .user-list__link {

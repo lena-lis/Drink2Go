@@ -5,12 +5,17 @@
 }
 
 .site-list__item {
-  padding: 30px 70px;
-  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 1px 0 #F0EBFF, inset 0 1px 0 #F0EBFF;
 }
 
 .site-list__link {
-  font-weight: 700;
+  display: block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
   color: #333333;
+  text-transform: uppercase;
   text-decoration: none;
 }
