@@ -8,6 +8,12 @@
   padding: 20px 0;
   text-align: center;
   box-shadow: 0 1px 0 #F0EBFF, inset 0 1px 0 #F0EBFF;
+
+  &:active {
+    @media (max-width: bootstrap.$mobile-width-only) {
+      background-color: #F0EBFF;
+    }
+  }
 }
 
 .site-list__link {
