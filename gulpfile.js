@@ -36,12 +36,12 @@ return gulp.src('source/*.html')
 
 // Scripts
 
-// const scripts = () => {
-// return gulp.src('source/js/script.js')
-// .pipe(terser())
-// .pipe(gulp.dest('build/js'))
-// .pipe(browser.stream());
-// }
+const scripts = () => {
+return gulp.src('source/js/script.js')
+.pipe(terser())
+.pipe(gulp.dest('build/js'))
+.pipe(browser.stream());
+}
 
 // Images
 
@@ -127,7 +127,7 @@ done();
 
 const watcher = () => {
 gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-// gulp.watch('source/js/script.js', gulp.series(scripts));
+gulp.watch('source/js/script.js', gulp.series(scripts));
 gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
@@ -140,7 +140,7 @@ optimizeImages,
 gulp.parallel(
 styles,
 html,
-// scripts,
+scripts,
 svg,
 sprite,
 createWebp
@@ -156,7 +156,7 @@ copyImages,
 gulp.parallel(
 styles,
 html,
-// scripts,
+scripts,
 svg,
 sprite,
 createWebp
