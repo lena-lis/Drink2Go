@@ -37,6 +37,10 @@
     position: unset;
     width: unset;
   }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    margin: auto;
+  }
 }
 
 .main-navigation--closed .main-navigation__list--site {

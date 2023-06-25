@@ -7,6 +7,10 @@
   @media (min-width: bootstrap.$tablet-width) {
     flex-direction: row;
   }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    gap: 20px;
+  }
 }
 
 .site-list__item {

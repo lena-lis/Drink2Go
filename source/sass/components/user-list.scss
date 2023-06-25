@@ -2,6 +2,11 @@
 
 .user-list {
   justify-content: flex-end;
+
+  @media (min-width: bootstrap.$desktop-width) {
+    justify-content: space-between;
+    gap: 20px;
+  }
 }
 
 .user-list__item {
@@ -16,9 +21,22 @@
     padding: 32px 22px;
   }
 
+  @media (min-width: bootstrap.$desktop-width) {
+    width: unset;
+    padding: 32px 20px;
+  }
+
   &:active {
     @media (min-width: bootstrap.$mobile-width) {
       background-color: #F0EBFF;
+    }
+  }
+
+  &:active .user-list__link,
+  &:hover .user-list__link,
+  &:focus .user-list__link {
+    @media (min-width: bootstrap.$tablet-width) {
+      color: #7859CF;
     }
   }
 }
@@ -28,6 +46,18 @@
   min-width: 16px;
   min-height: 16px;
   color: #333333;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  @media (min-width: bootstrap.$desktop-width) {
+    display: grid;
+    grid-template-columns: 16px 1fr;
+    column-gap: 8px;
+
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+  }
 }
 
 .user-list__icon {
@@ -37,5 +67,9 @@
 .user-list__text {
   @media (min-width: bootstrap.$mobile-width) {
     display: none;
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    display: block;
   }
 }
