@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png"> 180×180 -->
-  <link rel="manifest" href="manifest.webmanifest">
+  <!-- <link rel="manifest" href="manifest.webmanifest"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="./fonts/montserrat400.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="./fonts/montserrat700.woff2" type="font/woff2" as="font" crossorigin="anonymous">
@@ -76,29 +77,11 @@
     <h1 class="visually-hidden">Интернет-магазин кофейных напитков Drink2Go</h1>
 
     <!-- СЛАЙДЕР -->
-    <div class="swiper">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        ...
-      </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
 
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-
-      <!-- If we need scrollbar -->
-      <div class="swiper-scrollbar"></div>
-    </div>
-    <!-- <section class="slider">
+    <section class="slider swiper">
       <h2 class="visually-hidden">Новинки нашего ассортимента</h2>
-      <ol class="slider__list">
-        <li class="slider__item slider__item--current">
+      <ol class="slider__list swiper-wrapper">
+        <li class="slider__item swiper-slide">
           <h3 class="slider__title">Декаф Флэт Уайт</h3>
           <span class="slider__badge">Новинка!</span>
           <p class="slider__description">Свежесваренный кофе без кофеина из Эфиопии
@@ -119,7 +102,7 @@
           </div>
         </li>
 
-        <li class="slider__item">
+        <li class="slider__item swiper-slide">
           <h3 class="slider__title">Лавандовый Латте</h3>
           <span class="slider__badge">Новинка!</span>
           <p class="slider__description">Лавандовый Латте</p>
@@ -138,7 +121,7 @@
           </div>
         </li>
 
-        <li class="slider__item">
+        <li class="slider__item swiper-slide">
           <h3 class="slider__title">Тройной Эспрессо</h3>
           <span class="slider__badge">Новинка!</span>
           <p class="slider__description">Мощнее укола адреналина, чернее самой тёмной ночи,
@@ -160,13 +143,13 @@
       </ol>
 
       <div class="slider__controls">
-        <button class="slider__button slider__button--prev" type="button">
+        <button class="slider__button slider__button--prev swiper-button-prev" type="button">
           <svg class="slider__button-icon" aria-hidden="true" focusable="false" width="11" height="20">
             <use href="img/sprite.svg#arrow"></use>
           </svg>
           <span class="visually-hidden">Назад</span>
         </button>
-        <button class="slider__button slider__button--next" type="button">
+        <button class="slider__button slider__button--next swiper-button-next" type="button">
           <svg class="slider__button-icon" aria-hidden="true" focusable="false" width="11" height="20">
             <use href="img/sprite.svg#arrow"></use>
           </svg>
@@ -174,7 +157,10 @@
         </button>
       </div>
 
-      <ol class="slider__pagination">
+        <!-- If we need pagination -->
+        <div class="slider__pagination swiper-pagination"></div>
+
+      <!-- <ol class="slider__pagination">
         <li class="slider__pagination-item">
           <button class="slider__pagination-button slider__pagination-button--current" type="button">
             <span class="visually-hidden">1 фото</span>
@@ -190,8 +176,8 @@
             <span class="visually-hidden">3 фото</span>
           </button>
         </li>
-      </ol>
-    </section> -->
+      </ol> -->
+    </section>
 
 
     <!-- ПРЕИМУЩЕСТВА -->
@@ -651,6 +637,7 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="./js/script.js" type="module"></script>
 </body>
 </html>

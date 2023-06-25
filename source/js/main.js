@@ -1,8 +1,8 @@
-import './slider.js';
+import './slider.js'
 
 let navMain = document.querySelector(".main-navigation");
 let navToggle = document.querySelector(".main-navigation__toggle");
-let navContainer = document.querySelector(".main-navigation__container");
+// let navContainer = document.querySelector(".main-navigation__container");
 
 navMain.classList.remove("main-navigation--nojs");
 navMain.classList.add("main-navigation--closed");
