@@ -1,7 +1,118 @@
-.slider__item {
-  width: 320px;
-  min-height: 656px;
+@use "../global/bootstrap.scss";
+
+.slider {
+  box-sizing: border-box;
+  width: 100%;
+
 }
+
+.slider__list {
+  @include bootstrap.list-reset;
+}
+
+.slider__item {
+  box-sizing: border-box;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  min-width: 320px;
+  min-height: 656px;
+  padding-bottom: 40px;
+
+  text-align: center;
+}
+
+.slider__item--decaf {
+  background-color: #F3EBE1;
+}
+
+.slider__item--lavender {
+  background-color: #EAE6FC;
+}
+
+.slider__item--espresso {
+  background-color: #E5E6E8;
+}
+
+.slider__title {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0 20px;
+
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 700;
+  color: #333333;
+}
+
+.slider__badge {
+  margin-bottom: 4px;
+  padding: 0 20px;
+
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #7859CF;
+  text-transform: uppercase;
+
+  order: -1;
+}
+
+.slider__description {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+// Цена
+
+.slider__price-container {
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  align-items: baseline;
+  min-width: 230px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.slider__price {
+  margin-right: 6px;
+
+  font-size: 16px;
+  line-height: 32px;
+  text-decoration: line-through;
+  color: #7859CF;
+}
+
+.slider__price-discount {
+  margin-right: 20px;
+
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.slider__price-button {
+  padding: 8px 20px;
+}
+
+.slider__image-container {
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  padding: 20px;
+  padding-bottom: 0;
+
+  order: -2;
+}
+
+.slider__image {
+  margin: 0 auto;
+}
+
+// КНОПКИ ПЕРЕКЛЮЧЕНИЯ СЛАЙДЕРА
 
 .slider__button {
   display: block;
@@ -15,4 +126,16 @@
   z-index: 2;
   color: #7859CF;
   background-color: transparent;
+}
+
+.slider__button--next .slider__button-icon {
+  transform: rotate(180deg);
+}
+
+// ПАГИНАЦИЯ СЛАЙДЕРА
+
+.slider__pagination {
+  @media (min-width: bootstrap.$mobile-width) {
+    display: none;
+  }
 }
