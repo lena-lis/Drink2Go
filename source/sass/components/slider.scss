@@ -5,7 +5,14 @@
 
 .slider__button {
   display: block;
-  margin: 0;
-  border: 0;
+
+  position: absolute;
+  top: 23px;
+  bottom: 0;
+  width: 20px;
+  height: 100%;
+  border: none;
+  z-index: 2;
+  color: #7859CF;
   background-color: transparent;
 }
