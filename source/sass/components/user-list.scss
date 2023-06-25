@@ -11,8 +11,13 @@
 
   box-sizing: border-box;
 
+  @media (min-width: bootstrap.$tablet-width) {
+    min-height: 80px;
+    padding: 32px 22px;
+  }
+
   &:active {
-    @media (max-width: bootstrap.$mobile-width-only) {
+    @media (min-width: bootstrap.$mobile-width) {
       background-color: #F0EBFF;
     }
   }

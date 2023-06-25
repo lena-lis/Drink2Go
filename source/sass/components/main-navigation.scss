@@ -6,6 +6,17 @@
 .main-navigation {
   display: grid;
   grid-template-columns: 1fr 60px;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    display: block;
+  }
+}
+
+.main-navigation__container {
+  @media (min-width: bootstrap.$tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .main-navigation__list {
@@ -21,7 +32,11 @@
   left: 0;
   z-index: 10;
   width: 100%;
-  background-color: #ffffff;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    position: unset;
+    width: unset;
+  }
 }
 
 .main-navigation--closed .main-navigation__list--site {

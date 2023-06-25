@@ -2,6 +2,11 @@
 
 .site-list {
   flex-direction: column;
+  background-color: #ffffff;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .site-list__item {
@@ -9,9 +14,26 @@
   text-align: center;
   box-shadow: 0 1px 0 #F0EBFF, inset 0 1px 0 #F0EBFF;
 
+  @media (min-width: bootstrap.$tablet-width) {
+    padding: 32px 20px;
+    box-shadow: none;
+
+    &--current {
+      border-bottom: 2px solid #7859CF;
+    }
+  }
+
   &:active {
-    @media (max-width: bootstrap.$mobile-width-only) {
+    @media (min-width: bootstrap.$mobile-width) {
       background-color: #F0EBFF;
+    }
+  }
+
+  &:active .site-list__link,
+  &:hover .site-list__link,
+  &:focus .site-list__link {
+    @media (min-width: bootstrap.$tablet-width) {
+      color: #7859CF;
     }
   }
 }
