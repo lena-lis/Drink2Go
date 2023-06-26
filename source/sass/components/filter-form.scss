@@ -1,0 +1,11 @@
+@use "../global/bootstrap.scss";
+
+.filter-form__group {
+  border: none;
+}
+
+.filter-form__title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}

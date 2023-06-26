@@ -205,8 +205,17 @@
 
             <fieldset class="filter-form__group filter-form__group--price">
               <legend class="filter-form__title">Цена</legend>
+              <div class="filter-form__range" id="slider"></div>
+              <p class="filter-form__field">
+                <label class="filter-form__label visually-hidden">Изменить минимальную цену.</label>
+                <input class="filter-form__value" type="text">
+              </p>
+              <p class="level-form__field">
+                <label class="level-form__label visually-hidden">Изменить максимальную цену.</label>
+                <input class="level-form__value" type="text">
+              </p>
               <!-- <div class="level-form__slider" id="slider"></div> решение через nouislider -->
-              <div class="filter-form__range">  <!-- временное решение!!! -->
+              <!-- <div class="filter-form__range">  временное решение!!!
                 <div class="filter-form__scale">
                   <div class="filter-form__bar" style="left: 26px; width: 82px">
                     <button class="filter-form__toggle filter-form__toggle--min">
@@ -228,7 +237,7 @@
                     <input class="filter-form__value" type="text">
                   </p>
                 </div>
-              </div>
+              </div> -->
             </fieldset>
 
             <!-- Наличие молока -->

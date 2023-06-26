@@ -3,7 +3,8 @@
 
 // // Блоки
 @use "./components/button.scss";
-// @use "./components/main-container.scss";
+@use "./components/catalog.scss";
+@use "./components/filter-form.scss";
 @use "./components/main-header.scss";
 @use "./components/main-navigation.scss";
 @use "./components/features.scss";
