@@ -16,13 +16,19 @@
   background-color: white;
   opacity: 1;
   border-radius: unset;
+
+  &:hover,
+  &:focus {
+    background-color: #7859CF40;
+  }
 }
 
 .swiper-pagination-bullet-active {
   background-color: #7859cf;
 }
 
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   margin-top: 10px;
   margin-bottom: 10px;
 }
