@@ -229,17 +229,56 @@
 
   position: absolute;
   top: 23px;
-  bottom: 0;
+
   width: 20px;
   height: 100%;
+  padding: 0;
   border: none;
   z-index: 2;
   color: #7859CF;
   background-color: transparent;
+
+  &:disabled .slider__button-icon {
+    color: #bdbdbd;
+  }
+
+  @media (min-width: bootstrap.$tablet-width) {
+    width: 80px;
+  }
 }
+
+// Кнопка назад
+
+.slider__button--prev {
+  left: var(--swiper-navigation-sides-offset,0);
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(90deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+  }
+
+  &:active {
+    background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0.00) 100%);
+  }
+}
+
+// Кнопка вперед
 
 .slider__button--next .slider__button-icon {
   transform: rotate(180deg);
+}
+
+.slider__button--next {
+  right: var(--swiper-navigation-sides-offset, 0);
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(270deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+  }
+
+  &:active {
+    background: linear-gradient(270deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0.00) 100%);
+  }
 }
 
 // ПАГИНАЦИЯ СЛАЙДЕРА
