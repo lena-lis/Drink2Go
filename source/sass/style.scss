@@ -6,7 +6,8 @@
 // @use "./components/main-container.scss";
 @use "./components/main-header.scss";
 @use "./components/main-navigation.scss";
-// @use "./components/menu-link.scss";
+@use "./components/features.scss";
+@use "./components/features-list.scss";
 @use "./components/site-list.scss";
 @use "./components/user-list.scss";
 @use "./components/visually-hidden.scss";
