@@ -8,6 +8,14 @@
 
 .slider__list {
   @include bootstrap.list-reset;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    margin-bottom: 188px;
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .slider__item {
@@ -23,6 +31,40 @@
   padding-bottom: 40px;
 
   text-align: center;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    min-width: 768px;
+    min-height: 640px;
+    padding-top: 60px;
+    padding-bottom: 0;
+
+    &::after {
+      position: absolute;
+      bottom: 188px;
+      left: 0;
+      width: 100%;
+      min-height: 188px;
+      content: "";
+    }
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 625px);
+    grid-template-rows: repeat(4, min-content);
+    column-gap: 30px;
+    justify-content: center;
+
+    min-width: 1440px;
+    min-height: 600px;
+    padding: 30px 80px 84px;
+
+    text-align: left;
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .slider__item--decaf {
@@ -46,6 +88,22 @@
   line-height: 48px;
   font-weight: 700;
   color: #333333;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    margin-bottom: 16px;
+    padding: 0 60px;
+
+    font-size: 56px;
+    line-height: 80px;
+    letter-spacing: 1px;
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    height: fit-content;
+    padding: 0;
+  }
 }
 
 .slider__badge {
@@ -59,12 +117,34 @@
   text-transform: uppercase;
 
   order: -1;
+
+  @media (min-width: bootstrap.$desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    height: fit-content;
+    margin-top: 150px;
+    padding: 0;
+  }
 }
 
 .slider__description {
   margin-top: 0;
   margin-bottom: 20px;
   padding: 0 20px;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    padding: 0 80px;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    margin-bottom: 40px;
+    padding: 0;
+    padding-right: 95px;
+  }
 }
 
 // Цена
@@ -76,6 +156,13 @@
   min-width: 230px;
   margin: 0 auto;
   margin-bottom: 20px;
+
+  @media (min-width: bootstrap.$desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    margin: 0;
+    margin-bottom: 158px;
+  }
 }
 
 .slider__price {
@@ -99,6 +186,8 @@
   padding: 8px 20px;
 }
 
+// Изображение товара
+
 .slider__image-container {
   box-sizing: border-box;
   margin-bottom: 10px;
@@ -106,10 +195,31 @@
   padding-bottom: 0;
 
   order: -2;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    padding: 0 80px;
+    order: 2;
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    grid-row: 1 / 5;
+    margin-bottom: 0;
+    padding: 0;
+    order: -2;
+  }
 }
 
 .slider__image {
   margin: 0 auto;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    margin-bottom: -188px;
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    margin: 0;
+    margin-left: auto;
+  }
 }
 
 // КНОПКИ ПЕРЕКЛЮЧЕНИЯ СЛАЙДЕРА
@@ -137,5 +247,9 @@
 .slider__pagination {
   @media (min-width: bootstrap.$mobile-width) {
     display: none;
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    display: block;
   }
 }
