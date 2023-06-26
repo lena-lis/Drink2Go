@@ -9,6 +9,7 @@
   <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png"> 180×180 -->
   <!-- <link rel="manifest" href="manifest.webmanifest"> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/nouislider@14.6.3/distribute/nouislider.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="./fonts/montserrat400.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="./fonts/montserrat700.woff2" type="font/woff2" as="font" crossorigin="anonymous">
@@ -208,11 +209,11 @@
               <div class="filter-form__range" id="slider"></div>
               <p class="filter-form__field">
                 <label class="filter-form__label visually-hidden">Изменить минимальную цену.</label>
-                <input class="filter-form__value" type="text">
+                <input class="filter-form__value filter-form__value--lower" type="text">
               </p>
               <p class="level-form__field">
                 <label class="level-form__label visually-hidden">Изменить максимальную цену.</label>
-                <input class="level-form__value" type="text">
+                <input class="level-form__value filter-form__value--upper" type="text">
               </p>
               <!-- <div class="level-form__slider" id="slider"></div> решение через nouislider -->
               <!-- <div class="filter-form__range">  временное решение!!!
@@ -626,6 +627,7 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/nouislider@14.6.3/distribute/nouislider.min.js"></script>
   <script src="./js/main.js" type="module"></script>
 </body>
 </html>
