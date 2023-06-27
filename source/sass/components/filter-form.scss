@@ -84,3 +84,58 @@
 
   margin-top: 20px;
 }
+
+// Сортировка
+
+.filter-form__group--sorting {
+  display: grid;
+  grid-template-columns: 107px 1fr;
+  position: absolute;
+  bottom: -84px;
+  left: 0;
+  margin-bottom: 16px;
+  align-items: baseline;
+}
+
+.filter-form__select {
+  box-sizing: border-box;
+
+
+  width: 165px;
+  min-height: 32px;
+  padding: 5px 10px;
+  padding-right: 30px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #7859CF;
+
+  border: none;
+  background-color: transparent;
+
+  appearance: none;
+  background-image: url("../img/catalog/arrow-select.svg");
+  background-repeat: no-repeat;
+  background-size: 10px 6px;
+  background-position: center right;
+  background-position-x: calc(100% - 10px);
+
+  &:hover,
+  &:focus {
+    background-color: #F0EBFF;
+    border-radius: 4px;
+  }
+}
+
+//Кнопки
+
+.filter-form__button {
+  width: 100%;
+  padding: 8px 20px;
+
+  & + .filter-form__button {
+    margin-top: 20px;
+  }
+}
