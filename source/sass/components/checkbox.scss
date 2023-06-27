@@ -1,0 +1,68 @@
+@use "../global/bootstrap.scss";
+
+.checkbox {
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 52px;
+}
+
+.checkbox__label {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.checkbox__mark {
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+
+  width: 42px;
+  height: 24px;
+  background-color: #bdbdbd;
+  border-radius: 12px;
+
+  &:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    content: "";
+  }
+}
+
+.checkbox__input {
+  &:hover + .checkbox__mark {
+    border-color: #9070EC;
+    background-color: #7859CF40;
+  }
+
+  &:checked + .checkbox__mark {
+    border-color: #7859CF;
+    background-color: #7859CF;
+  }
+
+  &:checked + .checkbox__mark::after {
+    right: 0;
+    left: unset;
+  }
+
+  &:checked:disabled + .checkbox__mark::after {
+    background-color: #BDBDBD;
+  }
+
+  &:disabled + .checkbox__mark {
+    border-color: #E2E2E2;
+    background-color: #E2E2E2;
+  }
+
+  &:disabled ~ .checkbox__label {
+    color: #E2E2E2;
+  }
+}
