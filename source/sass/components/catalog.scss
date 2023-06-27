@@ -41,3 +41,20 @@
       //   margin-bottom: 80px;
       // }
 }
+
+.catalog__filter-container {
+  margin-bottom: 20px;
+}
+
+// Контейнер с карточками
+.catalog__card-container {
+  margin-bottom: 40px;
+}
+
+.catalog__list {
+  @include bootstrap.list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

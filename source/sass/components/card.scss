@@ -1,0 +1,82 @@
+@use "../global/bootstrap.scss";
+
+.card {
+  box-sizing: border-box;
+  width: 280px;
+  min-height: 420px;
+  padding: 40px 20px 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    width: 349px;
+    min-height: 440px;
+    padding: 50px 30px 30px;
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    width: 317px;
+    min-height: 460px;
+  }
+}
+
+.card__link {
+  display: block;
+  margin-bottom: 24px;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.card__image {
+  margin: 0 auto;
+}
+
+.card__title {
+  margin: 0;
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 32px;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.card__title-link {
+  color: #333333;
+  text-decoration: none;
+}
+
+.card__description {
+  margin: 0;
+  margin-bottom: 16px;
+  padding-right: 26px;
+
+  & br {
+    display: none;
+  }
+
+  @media (min-width: bootstrap.$tablet-width) {
+    margin-bottom: 20px;
+
+    & br {
+      display: block;
+    }
+  }
+}
+
+.card__order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__price {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+}

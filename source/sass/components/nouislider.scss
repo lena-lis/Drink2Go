@@ -10,16 +10,11 @@
   border-color: #bdbdbd;
 }
 
-.noUi-handle:after,
-.noUi-handle:before {
-  display: none;
-}
-
 .noUi-handle {
   &:after,
   &:before {
-  display: none;
-}
+    display: none;
+  }
 
   &:hover .noUi-touch-area,
   &:focus .noUi-touch-area {
