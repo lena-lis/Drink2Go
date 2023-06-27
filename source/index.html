@@ -207,14 +207,16 @@
             <fieldset class="filter-form__group filter-form__group--price">
               <legend class="filter-form__title">Цена</legend>
               <div class="filter-form__range" id="slider"></div>
-              <p class="filter-form__field">
-                <label class="filter-form__label visually-hidden">Изменить минимальную цену.</label>
-                <input class="filter-form__value filter-form__value--lower" type="text">
-              </p>
-              <p class="level-form__field">
-                <label class="level-form__label visually-hidden">Изменить максимальную цену.</label>
-                <input class="level-form__value filter-form__value--upper" type="text">
-              </p>
+              <div class="filter-form__field-container">
+                <p class="filter-form__field">
+                  <label class="filter-form__label visually-hidden">Изменить минимальную цену.</label>
+                  <input class="filter-form__value filter-form__value--lower" type="text" placeholder="0">
+                </p>
+                <p class="filter-form__field">
+                  <label class="filter-form__label visually-hidden">Изменить максимальную цену.</label>
+                  <input class="filter-form__value filter-form__value--upper" type="text">
+                </p>
+              </div>
             </fieldset>
 
             <!-- Наличие молока -->
@@ -302,7 +304,10 @@
             <fieldset class="filter-form__group filter-form__group--sorting">
               <legend class="filter-form__title">Сортировка:</legend>
               <select class="filter-form__select" name="sorting">
-                <option value="popular">по умолчанию</option>
+                <option value="default">по умолчанию</option>
+                <option value="expensive-first">сначала дорогие</option>
+                <option value="cheap-first">сначала дешёвые</option>
+                <option value="popular">высокий рейтинг</option>
               </select>
             </fieldset>
 

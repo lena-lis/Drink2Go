@@ -43,7 +43,15 @@
 }
 
 .catalog__filter-container {
-  margin-bottom: 20px;
+  margin-bottom: 84px;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    margin-bottom: 98px;
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 // Контейнер с карточками
