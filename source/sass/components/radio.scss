@@ -28,13 +28,14 @@
 }
 
 .radio__button {
-  &:hover + .radio__mark,
-  &:focus + .radio__mark {
+
+  &:hover+.radio__mark,
+  &:focus+.radio__mark {
     border-color: #9070EC;
   }
 
-  &:hover + .radio__mark::after,
-  &:focus + .radio__mark::after {
+  &:hover+.radio__mark::after,
+  &:focus+.radio__mark::after {
     position: absolute;
     top: 0;
     right: 0;
@@ -48,15 +49,15 @@
     content: "";
   }
 
-  &:active + .radio__mark {
+  &:active+.radio__mark {
     border-color: rgba(0, 0, 0, 0.3);
   }
 
-  &:checked + .radio__mark {
+  &:checked+.radio__mark {
     border-color: #7859CF;
   }
 
-  &:checked + .radio__mark::after {
+  &:checked+.radio__mark::after {
     position: absolute;
     top: 0;
     right: 0;
@@ -70,15 +71,15 @@
     content: "";
   }
 
-  &:disabled + .radio__mark {
+  &:disabled+.radio__mark {
     border-color: #E2E2E2;
   }
 
-  &:disabled ~ .radio__label {
+  &:disabled~.radio__label {
     color: #E2E2E2;
   }
 
-  &:checked:disabled + .radio__mark::after {
+  &:checked:disabled+.radio__mark::after {
     position: absolute;
     top: 0;
     right: 0;
