@@ -1,0 +1,94 @@
+@use "../global/bootstrap.scss";
+
+.radio {
+  position: relative;
+
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 34px;
+}
+
+.radio__label {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.radio__mark {
+  box-sizing: border-box;
+  position: absolute;
+  top: 42%;
+  left: 0;
+  transform: translateY(-50%);
+
+  width: 24px;
+  height: 24px;
+  border: 2px solid #bdbdbd;
+  border-radius: 50%;
+}
+
+.radio__button {
+  &:hover + .radio__mark,
+  &:focus + .radio__mark {
+    border-color: #9070EC;
+  }
+
+  &:hover + .radio__mark::after,
+  &:focus + .radio__mark::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 16px;
+    height: 16px;
+    background-color: #7859CF40;
+    border-radius: 50%;
+    content: "";
+  }
+
+  &:active + .radio__mark {
+    border-color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:checked + .radio__mark {
+    border-color: #7859CF;
+  }
+
+  &:checked + .radio__mark::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 16px;
+    height: 16px;
+    background-color: #7859CF;
+    border-radius: 50%;
+    content: "";
+  }
+
+  &:disabled + .radio__mark {
+    border-color: #E2E2E2;
+  }
+
+  &:disabled ~ .radio__label {
+    color: #E2E2E2;
+  }
+
+  &:checked:disabled + .radio__mark::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 16px;
+    height: 16px;
+    background-color: #E2E2E2;
+    border-radius: 50%;
+    content: "";
+  }
+}
