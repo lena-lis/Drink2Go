@@ -1,0 +1,29 @@
+.copyright {
+  text-align: center;
+}
+
+.copyright__text {
+  color: #BDBDBD;
+}
+
+.copyright__link {
+  position: relative;
+  color: #BDBDBD;
+  text-decoration: none;
+
+  &:hover .copyright__logo-icon,
+  &:focus .copyright__logo-icon {
+    color: #7859CF;
+  }
+
+  &:active .copyright__logo-icon {
+    color: #593CAC;
+  }
+}
+
+.copyright__logo-icon {
+  position: absolute;
+  top: 50%;
+  right: -16px;
+  transform: translateY(-50%);
+}

@@ -1,0 +1,46 @@
+@use "../global/bootstrap.scss";
+
+.socials__list {
+  @include bootstrap.list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+  .socials__item {
+    min-width: 40px;
+    min-height: 40px;
+    margin-right: 20px;
+  }
+
+  .socials__item:last-of-type {
+    margin-right: 0;
+  }
+
+  .socials__item-link {
+    position: relative;
+    display: block;
+    min-width: 40px;
+    min-height: 40px;
+    color: #BDBDBD;
+
+    &:hover,
+    &:focus {
+      color: #7859CF;
+    }
+
+    &:active {
+      color: #7859CF;
+      opacity: 0.3;
+    }
+  }
+
+  .socials__item-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }

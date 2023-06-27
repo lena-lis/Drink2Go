@@ -1,0 +1,152 @@
+@use "../global/bootstrap.scss";
+
+.main-footer {
+  width: 100%;
+}
+
+.main-footer__container {
+  @media (min-width: bootstrap.$tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 222px);
+    column-gap: 31px;
+    justify-content: space-between;
+
+    padding: 0 20px;
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 317px);
+
+    padding: 40px;
+  }
+}
+
+.main-footer__section {
+  padding: 0 20px;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    padding: 0;
+  }
+}
+
+.main-footer__section:not(:first-of-type) {
+  padding: 20px;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    padding: 0;
+  }
+}
+
+.main-footer__section:not(:last-of-type) {
+  border-bottom: 1px solid #F0EBFF;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    border-bottom: none;
+  }
+}
+
+
+// Логотип и соцсети
+
+.main-footer__socials-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  min-height: 80px;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    grid-column: 1 / -1;
+    min-height: 88px;
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    grid-column: 1 / 2;
+  }
+}
+
+.main-footer__logo {
+  margin: auto 0;
+  margin-right: 20px;
+
+  @media (min-width: bootstrap.$desktop-width) {
+    margin: 0;
+  }
+}
+
+.main-footer__logo-link {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.main-footer__logo-text {
+  @media (min-width: bootstrap.$mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+.main-footer__socials {
+  margin: auto 0;
+}
+
+.main-footer__title {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #7859CF;
+}
+
+.main-footer__list {
+  @include bootstrap.list-reset;
+}
+
+.main-footer__item {
+  padding: 8px 0;
+
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.shop__item:not(:last-of-type) {
+  margin-bottom: 4px;
+}
+
+.media__item:not(:last-of-type) {
+  margin-bottom: 4px;
+}
+
+.main-footer__link {
+  color: #333333;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: #9070EC;
+  }
+
+  &:active {
+    color: #593CAC;
+  }
+}
+
+.main-footer__section:last-of-type {
+  padding-bottom: 30px;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    padding-top: 30px;
+  }
+}
+
+.main-footer__copyright {
+  grid-column: 1 / -1;
+  margin: 0 auto;
+}
