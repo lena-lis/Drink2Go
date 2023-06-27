@@ -4,18 +4,21 @@
 // // Блоки
 @use "./components/adding-list.scss";
 @use "./components/button.scss";
+@use "./components/card.scss";
 @use "./components/cart-button.scss";
 @use "./components/catalog.scss";
+@use "./components/checkbox.scss";
 @use "./components/country-list.scss";
-@use "./components/filter-form.scss";
 @use "./components/features.scss";
 @use "./components/features-list.scss";
+@use "./components/filter-form.scss";
 @use "./components/main-header.scss";
 @use "./components/main-navigation.scss";
 @use "./components/nouislider.scss";
+@use "./components/pagination.scss";
 @use "./components/radio.scss";
 @use "./components/site-list.scss";
+@use "./components/slider.scss";
+@use "./components/swiper.scss";
 @use "./components/user-list.scss";
 @use "./components/visually-hidden.scss";
-@use "./components/swiper.scss";
-@use "./components/slider.scss";

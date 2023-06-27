@@ -22,6 +22,7 @@
   width: 42px;
   height: 24px;
   background-color: #bdbdbd;
+  border: 2px solid #bdbdbd;
   border-radius: 12px;
 
   &:after {
@@ -46,11 +47,13 @@
   &:checked + .checkbox__mark {
     border-color: #7859CF;
     background-color: #7859CF;
+    transition: all 1s ease-out;
   }
 
   &:checked + .checkbox__mark::after {
     right: 0;
     left: unset;
+
   }
 
   &:checked:disabled + .checkbox__mark::after {

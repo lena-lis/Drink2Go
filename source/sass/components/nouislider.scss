@@ -4,14 +4,14 @@
   border-radius: 50%;
   border: 2px solid #9070EC;
   box-shadow: unset;
+}
 
-  & .noUi-handle-lower {
-    right: -24px;
-  }
+.noUi-horizontal .noUi-handle-lower {
+  right: -24px;
+}
 
-  & .noUi-handle-upper {
-    right: 0;
-  }
+.noUi-horizontal .noUi-handle-upper {
+  right: 0;
 }
 
 [disabled] .noUi-handle {

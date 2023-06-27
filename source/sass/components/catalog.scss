@@ -7,10 +7,26 @@
 
 .catalog__container {
   padding: 50px 20px 44px;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    padding: 80px 20px 90px;
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    position: relative;
+    display: grid;
+    grid-template-columns: 318px 1fr;
+    column-gap: 30px;
+    padding: 100px 40px 120px;
+  }
 }
 
 .catalog__header {
   text-align: center;
+
+  @media (min-width: bootstrap.$desktop-width) {
+    grid-column: 1 / -1;
+  }
 }
 
 .catalog__title {
@@ -31,15 +47,14 @@
   font-size: 24px;
   line-height: 36px;
 
-  // @media (min-width: bootstrap.$tablet-width) {
-    //   margin-bottom: 60px;
-    //   font-size: 42px;
-    //   line-height: 64px;
-    // }
+  @media (min-width: bootstrap.$tablet-width) {
+    font-size: 42px;
+    line-height: 64px;
+  }
 
-    // @media (min-width: bootstrap.$desktop-width) {
-      //   margin-bottom: 80px;
-      // }
+  @media (min-width: bootstrap.$desktop-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .catalog__filter-container {
@@ -57,6 +72,15 @@
 // Контейнер с карточками
 .catalog__card-container {
   margin-bottom: 40px;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    margin-top: 54px;
+    margin-bottom: 60px;
+  }
 }
 
 .catalog__list {
@@ -65,4 +89,17 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 20px;
+}
+
+// Пагинация
+
+.catalog__pagination-container {
+  @media (min-width: bootstrap.$desktop-width) {
+    grid-column: 2 / -1;
+  }
+}
+
+.catalog__pagination {
+  min-width: 280px;
 }

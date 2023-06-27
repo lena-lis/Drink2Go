@@ -1,0 +1,66 @@
+@use "../global/bootstrap.scss";
+
+.pagination {
+  @include bootstrap.list-reset;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    justify-content: end;
+  }
+}
+
+.pagination__item {
+  min-width: 40px;
+  min-height: 40px;
+
+  border-radius: 4px;
+}
+
+.pagination__link {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 40px;
+  min-height: 40px;
+
+  text-decoration: none;
+
+  &--current {
+    font-weight: 600;
+    color: #333333;
+    background-color: transparent;
+  }
+}
+
+.pagination__icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    display: none;
+  }
+}
+
+.pagination__link--next .pagination__icon {
+  transform: rotate(180deg);
+}
+
+.pagination__link-text {
+  display: none;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    display: block;
+    padding: 8px 20px;
+  }
+}

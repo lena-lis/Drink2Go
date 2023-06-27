@@ -1,8 +1,25 @@
 @use "../global/bootstrap.scss";
 
 .filter-form {
+  position: relative;
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 222px);
+    column-gap: 31px;
+    row-gap: 40px;
+    justify-content: space-evenly;
+
+    width: unset;
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    position: unset;
+    grid-template-columns: 318px;
+    row-gap: 30px;
+  }
 }
 
 .filter-form__group {
@@ -10,9 +27,14 @@
   margin-bottom: 30px;
   padding: 0;
   border: none;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .filter-form__title {
+  padding: 0;
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
@@ -23,6 +45,10 @@
 .filter-form__range {
   margin-top: 20px;
   margin-bottom: 24px;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .filter-form__field-container {
@@ -90,11 +116,25 @@
 .filter-form__group--sorting {
   display: grid;
   grid-template-columns: 107px 1fr;
+  column-gap: 8px;
+
   position: absolute;
   bottom: -84px;
   left: 0;
   margin-bottom: 16px;
   align-items: baseline;
+
+  @media (min-width: bootstrap.$tablet-width) {
+    right: 0;
+    left: unset;
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    top: 224px;
+    right: 40px;
+    bottom: unset;
+    margin-bottom: 30px;
+  }
 }
 
 .filter-form__select {
@@ -103,8 +143,7 @@
 
   width: 165px;
   min-height: 32px;
-  padding: 5px 10px;
-  padding-right: 30px;
+  padding: 5px 30px 5px 8px;
 
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -131,11 +170,30 @@
 
 //Кнопки
 
+.filter-form__button-wrapper {
+  @media (min-width: bootstrap.$tablet-width) {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 20px;
+
+    width: 277px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: bootstrap.$desktop-width) {
+    margin-top: 10px;
+  }
+}
+
 .filter-form__button {
   width: 100%;
   padding: 8px 20px;
 
   & + .filter-form__button {
     margin-top: 20px;
+
+    @media (min-width: bootstrap.$tablet-width) {
+      margin-top: 0;
+    }
   }
 }
