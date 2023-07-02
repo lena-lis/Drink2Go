@@ -6,14 +6,6 @@
   box-shadow: unset;
 }
 
-.noUi-horizontal .noUi-handle-lower {
-  right: -24px;
-}
-
-.noUi-horizontal .noUi-handle-upper {
-  right: 0;
-}
-
 [disabled] .noUi-handle {
   border-color: #bdbdbd;
 }
@@ -58,7 +50,7 @@
   &::after {
     position: absolute;
     top: 4px;
-    width: 100%;
+    width: calc(100% + 17px);
     height: 2px;
     background-color: #e2e2e2;
     transform: translateY(50%);
