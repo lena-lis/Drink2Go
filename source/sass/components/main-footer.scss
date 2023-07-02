@@ -39,13 +39,12 @@
 }
 
 .main-footer__section:not(:last-of-type) {
-  border-bottom: 1px solid #F0EBFF;
+  border-bottom: 1px solid #f0ebff;
 
   @media (min-width: bootstrap.$tablet-width) {
     border-bottom: none;
   }
 }
-
 
 // Логотип и соцсети
 
@@ -100,7 +99,7 @@
   margin-top: 0;
   margin-bottom: 12px;
   font-size: 14px;
-  color: #7859CF;
+  color: #7859cf;
 }
 
 .main-footer__list {
@@ -130,11 +129,11 @@
 
   &:hover,
   &:focus {
-    color: #9070EC;
+    color: #9070ec;
   }
 
   &:active {
-    color: #593CAC;
+    color: #593cac;
   }
 }
 

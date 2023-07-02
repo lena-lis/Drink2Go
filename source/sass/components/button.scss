@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
 
-  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-family: "Montserrat", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
@@ -14,19 +14,19 @@
   &:hover,
   &:focus {
     color: #ffffff;
-    background-color: #9070EC;
+    background-color: #9070ec;
   }
 
   &:active {
     color: #ffffff;
-    background-color: #593CAC;
+    background-color: #593cac;
   }
 }
 
 .button--primary {
   color: #ffffff;
 
-  background-color: #7859CF;
+  background-color: #7859cf;
 
   &:disabled {
     background-color: #bdbdbd;
@@ -34,11 +34,11 @@
 }
 
 .button--secondary {
-  color: #7859CF;
+  color: #7859cf;
   background-color: #ffffff;
 }
 
 .button--secondary:disabled {
   color: #ffffff;
-  background-color: #E2E2E2;
+  background-color: #e2e2e2;
 }

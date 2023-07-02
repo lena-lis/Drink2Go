@@ -3,7 +3,6 @@
 .slider {
   box-sizing: border-box;
   width: 100%;
-
 }
 
 .slider__list {
@@ -68,15 +67,15 @@
 }
 
 .slider__item--decaf {
-  background-color: #F3EBE1;
+  background-color: #f3ebe1;
 }
 
 .slider__item--lavender {
-  background-color: #EAE6FC;
+  background-color: #eae6fc;
 }
 
 .slider__item--espresso {
-  background-color: #E5E6E8;
+  background-color: #e5e6e8;
 }
 
 .slider__title {
@@ -113,7 +112,7 @@
   font-size: 12px;
   line-height: 16px;
   font-weight: 700;
-  color: #7859CF;
+  color: #7859cf;
   text-transform: uppercase;
 
   order: -1;
@@ -171,7 +170,7 @@
   font-size: 16px;
   line-height: 32px;
   text-decoration: line-through;
-  color: #7859CF;
+  color: #7859cf;
 }
 
 .slider__price-discount {
@@ -235,7 +234,7 @@
   padding: 0;
   border: none;
   z-index: 2;
-  color: #7859CF;
+  color: #7859cf;
   background-color: transparent;
 
   &:disabled .slider__button-icon {
@@ -250,15 +249,19 @@
 // Кнопка назад
 
 .slider__button--prev {
-  left: var(--swiper-navigation-sides-offset,0);
+  left: var(--swiper-navigation-sides-offset, 0);
 
   &:hover,
   &:focus {
-    background: linear-gradient(90deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+    background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
   }
 
   &:active {
-    background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0.00) 100%);
+    background: linear-gradient(
+      90deg,
+      rgba(120, 89, 207, 0.25) 0%,
+      rgba(120, 89, 207, 0) 100%
+    );
   }
 }
 
@@ -273,11 +276,15 @@
 
   &:hover,
   &:focus {
-    background: linear-gradient(270deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+    background: linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
   }
 
   &:active {
-    background: linear-gradient(270deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0.00) 100%);
+    background: linear-gradient(
+      270deg,
+      rgba(120, 89, 207, 0.25) 0%,
+      rgba(120, 89, 207, 0) 100%
+    );
   }
 }
 

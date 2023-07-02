@@ -28,7 +28,7 @@
 
   &:active {
     @media (min-width: bootstrap.$mobile-width) {
-      background-color: #F0EBFF;
+      background-color: #f0ebff;
     }
   }
 
@@ -36,7 +36,7 @@
   &:hover .user-list__link,
   &:focus .user-list__link {
     @media (min-width: bootstrap.$tablet-width) {
-      color: #7859CF;
+      color: #7859cf;
     }
   }
 }

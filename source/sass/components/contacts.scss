@@ -14,7 +14,7 @@
   height: 16px;
   background-position: center;
   background-repeat: no-repeat;
-  content: '';
+  content: "";
 }
 
 .contacts__address {
@@ -26,7 +26,7 @@
   font-style: normal;
 
   &::before {
-    background-image: url('../img/contacts/address.svg');
+    background-image: url("../img/contacts/address.svg");
   }
 }
 
@@ -38,6 +38,6 @@
   text-decoration: none;
 
   &::before {
-    background-image: url('../img/contacts/phone.svg');
+    background-image: url("../img/contacts/phone.svg");
   }
 }

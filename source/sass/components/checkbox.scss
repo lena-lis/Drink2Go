@@ -25,7 +25,7 @@
   border: 2px solid #bdbdbd;
   border-radius: 12px;
 
-  &:after {
+  &::after {
     position: absolute;
     top: 0;
     left: 0;
@@ -40,32 +40,31 @@
 
 .checkbox__input {
   &:hover + .checkbox__mark {
-    border-color: #9070EC;
-    background-color: #7859CF40;
+    border-color: #9070ec;
+    background-color: #7859cf40;
   }
 
   &:checked + .checkbox__mark {
-    border-color: #7859CF;
-    background-color: #7859CF;
+    border-color: #7859cf;
+    background-color: #7859cf;
     transition: all 1s ease-out;
   }
 
   &:checked + .checkbox__mark::after {
     right: 0;
     left: unset;
-
   }
 
   &:checked:disabled + .checkbox__mark::after {
-    background-color: #BDBDBD;
+    background-color: #bdbdbd;
   }
 
   &:disabled + .checkbox__mark {
-    border-color: #E2E2E2;
-    background-color: #E2E2E2;
+    border-color: #e2e2e2;
+    background-color: #e2e2e2;
   }
 
   &:disabled ~ .checkbox__label {
-    color: #E2E2E2;
+    color: #e2e2e2;
   }
 }

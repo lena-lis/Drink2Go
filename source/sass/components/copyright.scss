@@ -3,21 +3,21 @@
 }
 
 .copyright__text {
-  color: #BDBDBD;
+  color: #bdbdbd;
 }
 
 .copyright__link {
   position: relative;
-  color: #BDBDBD;
+  color: #bdbdbd;
   text-decoration: none;
 
   &:hover .copyright__logo-icon,
   &:focus .copyright__logo-icon {
-    color: #7859CF;
+    color: #7859cf;
   }
 
   &:active .copyright__logo-icon {
-    color: #593CAC;
+    color: #593cac;
   }
 }
 
