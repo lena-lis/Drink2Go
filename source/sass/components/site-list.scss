@@ -1,6 +1,7 @@
 @use "../global/bootstrap.scss";
 
 .site-list {
+  grid-column: 1 / -1;
   flex-direction: column;
   background-color: #ffffff;
 

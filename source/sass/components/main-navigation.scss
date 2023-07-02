@@ -4,15 +4,19 @@
 // МЕНЮ
 
 .main-navigation {
-  display: grid;
-  grid-template-columns: 1fr 60px;
+  margin-top: -60px;
 
   @media (min-width: bootstrap.$tablet-width) {
+    margin-top: 0;
     display: block;
   }
 }
 
 .main-navigation__container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 60px;
+
   @media (min-width: bootstrap.$tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -27,15 +31,12 @@
 }
 
 .main-navigation__list--site {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 10;
   width: 100%;
+  order: 10;
 
   @media (min-width: bootstrap.$tablet-width) {
-    position: unset;
     width: unset;
+    order: unset;
   }
 
   @media (min-width: bootstrap.$desktop-width) {
@@ -47,6 +48,13 @@
   @media (max-width: bootstrap.$mobile-width-only) {
     display: none;
   }
+}
+
+.main-navigation--opened .main-navigation__list--site {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
 }
 
 // Кнопка мобильного меню
@@ -64,6 +72,8 @@
 
   background-color: #ffffff;
   border: none;
+
+  z-index: 20;
 
   @media (min-width: bootstrap.$tablet-width) {
     display: none;

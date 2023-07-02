@@ -5,16 +5,14 @@
 }
 
 .main-header__container {
-  position: relative;
-
-  display: grid;
-  grid-template-columns: 72px 1fr;
-
+  display: flex;
+  flex-direction: column;
   min-height: 60px;
 
   @media (min-width: bootstrap.$tablet-width) {
     box-sizing: border-box;
 
+    display: grid;
     grid-template-columns: 82px 1fr;
     column-gap: 60px;
     padding: 0 20px;
